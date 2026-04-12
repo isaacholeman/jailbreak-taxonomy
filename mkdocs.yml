@@ -1,0 +1,67 @@
+site_name: MLCommons Jailbreak Attack Taxonomy
+site_description: >
+  A mechanism-first classification of single-turn, inference-time prompt attacks
+  on large language models.
+site_url: https://mlcommons.github.io/jailbreak-taxonomy/
+repo_url: https://github.com/mlcommons/jailbreak-taxonomy
+repo_name: mlcommons/jailbreak-taxonomy
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Taxonomy:
+      - Overview: taxonomy/taxonomy-overview.md
+      - Perturbation:
+          - Family Overview: taxonomy/families/perturbation/README.md
+          - Plain Perturbations: taxonomy/families/perturbation/plain-perturbations.md
+          - Transfer Text Perturbations: taxonomy/families/perturbation/transfer-text-perturbations.md
+      - Encoding Abuse:
+          - Family Overview: taxonomy/families/encoding-abuse/README.md
+          - Encoding & Unicode Tricks: taxonomy/families/encoding-abuse/encoding-unicode-tricks.md
+          - Wrappers & Schemas: taxonomy/families/encoding-abuse/wrappers-schemas.md
+      - Overt Carriers:
+          - Family Overview: taxonomy/families/overt-carriers/README.md
+          - Direct Override Patterns: taxonomy/families/overt-carriers/direct-override-patterns.md
+          - Role-Play & Template Jailbreaks: taxonomy/families/overt-carriers/roleplay-template-jailbreaks.md
+      - Composition & Ordering:
+          - Family Overview: taxonomy/families/composition-ordering/README.md
+          - Context Framing & Deception: taxonomy/families/composition-ordering/context-framing-deception.md
+          - Fragment Assembly: taxonomy/families/composition-ordering/fragment-assembly.md
+  - Contributing: CONTRIBUTING.md
+  - Governance:
+      - Maintainers: governance/maintainers.md
+      - Review Process: governance/review-process.md
+      - Severity Framework: governance/severity-framework.md
+  - Taxonomy Structure Template: .github/TAXONOMY_STRUCTURE_TEMPLATE.md
+  - Changelog: CHANGELOG.md

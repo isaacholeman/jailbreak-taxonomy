@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+title: MLCommons Jailbreak Attack Taxonomy
+message: "If you use this taxonomy, please cite the v0.7 methodology paper."
+type: dataset
+license: CC-BY-4.0
+version: 0.7.0
+date-released: 2026-02-01
+url: https://github.com/mlcommons/jailbreak-taxonomy
+repository-code: https://github.com/mlcommons/jailbreak-taxonomy
+keywords:
+  - jailbreak
+  - large language models
+  - AI safety
+  - adversarial attacks
+  - taxonomy
+  - benchmark
+  - MLCommons
+preferred-citation:
+  type: article
+  title: "A Robust, Defensible, and Reproducible Methodology for Benchmarking Single-Turn Jailbreak Attacks on Large Language Models"
+  authors:
+    - family-names: Maple
+      given-names: Carsten
+    - family-names: Tapwal
+      given-names: Riya
+    - family-names: Knotz
+      given-names: Chris
+    - family-names: Ezick
+      given-names: James
+    - family-names: Goel
+      given-names: James
+    - family-names: Parrish
+      given-names: Alicia
+    - family-names: Ricciuti
+      given-names: Federico
+    - family-names: Petit
+      given-names: Jonathan
+    - family-names: Hui
+      given-names: Ong Chen
+    - family-names: Lim
+      given-names: Seok Min
+  year: 2026
+  month: 2
+  url: https://mlcommons.org/wp-content/uploads/2026/02/MLCommons___Security___Jailbreak_0_7_Paper_Collaborative.pdf
