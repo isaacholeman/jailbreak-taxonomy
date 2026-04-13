@@ -5,6 +5,7 @@ site_description: >
 site_url: https://mlcommons.github.io/jailbreak-taxonomy/
 repo_url: https://github.com/mlcommons/jailbreak-taxonomy
 repo_name: mlcommons/jailbreak-taxonomy
+docs_dir: .
 
 theme:
   name: material
