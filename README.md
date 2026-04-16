@@ -21,6 +21,8 @@ The taxonomy organizes known jailbreak mechanisms into four families based on th
 
 Total: 4 families, 8 categories, 18 leaf-level mechanisms.
 
+> **See all 113 attacks in one place →** [Attacks Overview](taxonomy/attacks-overview.md) — a collapsible catalog organized by family, covering every attack documented in this taxonomy.
+
 ## Repository Structure
 
 ```
@@ -35,6 +37,7 @@ jailbreak-taxonomy/
 │   ├── taxonomy.yaml            # Machine-readable taxonomy structure
 │   ├── attacks.yaml             # Machine-readable attack catalog (113 attacks)
 │   ├── taxonomy-overview.md     # Human-readable summary with tree diagram
+│   ├── attacks-overview.md      # Auto-generated cross-family catalog (collapsible by family)
 │   └── families/
 │       ├── perturbation/
 │       │   ├── README.md
@@ -94,7 +97,7 @@ The taxonomy satisfies six requirements from the v0.7 methodology (Section 5.2):
 
 ## How to Use This Taxonomy
 
-**Researchers**: Start with the [taxonomy overview](taxonomy/taxonomy-overview.md) for the full tree, then read family and leaf documentation for mechanism details, inclusion/exclusion cues, canonical examples, and the attack catalog for each leaf. The [taxonomy.yaml](taxonomy/taxonomy.yaml) provides the machine-readable taxonomy structure; [attacks.yaml](taxonomy/attacks.yaml) provides the machine-readable attack catalog with paper links, repositories, and model coverage for all 113 documented attacks.
+**Researchers**: Start with the [taxonomy overview](taxonomy/taxonomy-overview.md) for the full tree, then read family and leaf documentation for mechanism details, inclusion/exclusion cues, canonical examples, and the attack catalog for each leaf. The [attacks overview](taxonomy/attacks-overview.md) provides a single collapsible index of all 113 attacks grouped by family, useful for scanning the complete catalog in one place. The [taxonomy.yaml](taxonomy/taxonomy.yaml) provides the machine-readable taxonomy structure; [attacks.yaml](taxonomy/attacks.yaml) provides the machine-readable attack catalog with paper links, repositories, and model coverage for all 113 documented attacks.
 
 **Security teams and red-team practitioners**: Use the leaf-level documentation to structure red-teaming exercises by mechanism family for coverage across structurally distinct attack strategies. The prevalence data helps prioritize testing.
 

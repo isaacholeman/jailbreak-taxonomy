@@ -43,6 +43,7 @@ nav:
   - Home: index.md
   - Taxonomy:
       - Overview: taxonomy/taxonomy-overview.md
+      - All Attacks: taxonomy/attacks-overview.md
       - Perturbation:
           - Family Overview: taxonomy/families/perturbation/README.md
           - Plain Perturbations: taxonomy/families/perturbation/plain-perturbations.md

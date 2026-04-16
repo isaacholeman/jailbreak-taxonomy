@@ -9,10 +9,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Added
 - `scripts/generate_tables.py` generates Attack Catalog tables in family READMEs and category documents from `taxonomy/attacks.yaml`
 - Combined attack catalog at the family level, grouped by category with per-attack leaf labels
+- `taxonomy/attacks-overview.md` provides a single auto-generated cross-family catalog with collapsible sections per family, listing all 113 attacks with taxonomy placement, paper, repository, venue, and year
 - `.github/workflows/check-tables.yml` enforces drift-free tables on every pull request
 
 ### Changed
-- `taxonomy/attacks.yaml` is now the single source of truth for attack catalog tables; per-leaf and per-family tables are regenerated from it
+- `taxonomy/attacks.yaml` is now the single source of truth for attack catalog tables; per-leaf, per-family, and cross-family overview tables are regenerated from it
 
 ## [0.7.0] - 2026-02-16
 

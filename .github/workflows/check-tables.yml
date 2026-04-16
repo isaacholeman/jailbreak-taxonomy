@@ -8,6 +8,7 @@ on:
     paths:
       - "taxonomy/attacks.yaml"
       - "taxonomy/taxonomy.yaml"
+      - "taxonomy/attacks-overview.md"
       - "taxonomy/families/**/*.md"
       - "scripts/generate_tables.py"
       - ".github/workflows/check-tables.yml"

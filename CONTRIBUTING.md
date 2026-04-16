@@ -61,7 +61,7 @@ A paper link with a sentence about the mechanism is enough to open an issue. Par
 
 #### Regenerating Attack Tables
 
-The Attack Catalog tables in each family README and each category document are generated from `taxonomy/attacks.yaml`. After editing that file, regenerate the tables locally and commit the result:
+The Attack Catalog tables in each family README and each category document, together with the cross-family [Attacks Overview](taxonomy/attacks-overview.md), are generated from `taxonomy/attacks.yaml`. After editing that file, regenerate the tables locally and commit the result:
 
 ```
 pip install pyyaml
@@ -70,7 +70,7 @@ python scripts/generate_tables.py
 
 CI runs `python scripts/generate_tables.py --check` on every pull request and fails if the generated tables are out of sync with `attacks.yaml`.
 
-Sections between the `<!-- BEGIN GENERATED: attack-catalog -->` and `<!-- END GENERATED: attack-catalog -->` markers are overwritten by the script; edit `attacks.yaml` instead.
+Sections between `<!-- BEGIN GENERATED: attack-catalog -->` / `<!-- END GENERATED: attack-catalog -->` and between `<!-- BEGIN GENERATED: attacks-overview -->` / `<!-- END GENERATED: attacks-overview -->` are overwritten by the script; edit `attacks.yaml` instead.
 
 ### 4. Coded Attack Contributions
 
