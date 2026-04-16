@@ -37,27 +37,46 @@ Fixes, clarifications, examples, and metadata corrections. Good entry point for 
 
 Open a pull request with your changes. No issue or template needed for small fixes.
 
-### 3. Attack List Contributions
+### 3. Partial Attack Submission
 
-Add documented jailbreak attacks to the taxonomy. This is the most common substantive contribution.
+The fastest way to contribute is to point us at an existing paper, blog post, or technical report that documents a jailbreak technique. If that's all you have time for, please submit it. Maintainers or other contributors can fill in gaps after the attack is logged.
 
-Most submissions reference an existing paper, blog post, or technical report. Submissions for novel attacks that have not yet been formally published are also accepted, provided there is enough documentation to evaluate the mechanism and evidence of effectiveness (see below).
+**What we need at minimum:**
 
-**What we need:**
+- Attack name
+- A link to documentation (paper, blog post, technical report, or pre-print)
 
-- Attack name and a link to documentation (paper, blog post, technical report, or pre-print)
+**Nice to have:**
+
 - A brief description of the mechanism: how does the prompt manipulation work?
-- Evidence of effectiveness (ideally tested against 3+ models, though partial information is welcome)
-- Repository link, if available
+- Evidence of effectiveness (ideally tested against 3+ models)
+- Suggested taxonomy placement
 
-**Pre-publication or novel attacks:** In place of a paper link, provide a written description of the mechanism and your testing results. More models tested, reproducible methodology, and quantified success rates will speed up review. Submitting an attack here does not constitute academic publication. Contributors should pursue formal publication separately if relevant.
+**How to submit:** [open an Attack Submission issue](../../issues/new?template=attack-submission.md). The maintainers will handle taxonomy placement.
+
+If you can provide a working code repository as well, please consider a [Complete Attack Submission](#4-complete-attack-submission-preferred) instead. Complete submissions let the working group validate the mechanism independently and are the most useful form of contribution.
+
+**Pre-publication or novel attacks:** If the attack has not been formally published, a written description of the mechanism and your testing results can stand in for a paper link. Submitting an attack here does not constitute academic publication; contributors should pursue formal publication separately if relevant.
+
+### 4. Complete Attack Submission (Preferred)
+
+We'd prefer that contributors submit at this level when possible. A complete submission includes a link to a public code repository that reproduces the attack, which allows the working group to validate the mechanism independently.
+
+**To be clear:** we ask for a **link** to a public repository you maintain. You do not submit source code to this repository via pull request. This repository is for taxonomy documentation, not attack tooling. Keep the code in your own repo and link to it here.
+
+**What a complete submission includes:**
+
+- Attack name
+- A link to documentation (paper, blog post, technical report, or pre-print)
+- A link to a public code repository with the implementation
+- A description of the mechanism: how does the prompt manipulation work?
+- Evidence of effectiveness across 3+ distinct models, with a documented testing methodology
+- Suggested taxonomy placement
 
 **How to submit:**
 
 - **If you know where the attack belongs in the taxonomy**, open a pull request adding a new entry to `taxonomy/attacks.yaml` (see [Regenerating Attack Tables](#regenerating-attack-tables) below). That single file is the source of truth; the category and family Attack Catalog tables are generated from it.
-- **If you're unsure about placement or have partial information**, [open an Attack Submission issue](../../issues/new?template=attack-submission.md). The issue template will guide you through what to include. The maintainers will handle taxonomy placement.
-
-A paper link with a sentence about the mechanism is enough to open an issue. Partial information is fine.
+- **If you're unsure about placement**, [open an Attack Submission issue](../../issues/new?template=attack-submission.md).
 
 #### Regenerating Attack Tables
 
@@ -71,18 +90,6 @@ python scripts/generate_tables.py
 CI runs `python scripts/generate_tables.py --check` on every pull request and fails if the generated tables are out of sync with `attacks.yaml`.
 
 Sections between `<!-- BEGIN GENERATED: attack-catalog -->` / `<!-- END GENERATED: attack-catalog -->` and between `<!-- BEGIN GENERATED: attacks-overview -->` / `<!-- END GENERATED: attacks-overview -->` are overwritten by the script; edit `attacks.yaml` instead.
-
-### 4. Coded Attack Contributions
-
-If you have implemented code that reproduces an attack, you can contribute that alongside an attack list entry.
-
-Coded contributions follow the same submission paths as attack list contributions (issue or PR), but should additionally include:
-
-- A link to a public repository with the implementation
-- Documentation of the testing methodology and models evaluated
-- Test cases or scripts that demonstrate the attack mechanism
-
-A coded contribution without a corresponding attack catalog entry will be asked to provide one. The catalog entry (name, paper, mechanism description, models tested) is the minimum unit; code supplements it.
 
 ### 5. Taxonomy Structure Contributions
 
