@@ -183,45 +183,25 @@ If you only have a paper link and aren't sure about placement, [open an issue](.
 
 ## Review Process
 
-All submissions follow a structured review process:
-
-### Timeline
-
-- **Triage**: Within 5 business days, submissions are evaluated for completeness and scope
-- **Reviewer Assignment**: One taxonomy maintainer + one domain expert
-- **Technical Review**: Within 15 business days of assignment
-- **Resolution**: Maintainers communicate outcomes and next steps
+All submissions are reviewed by the Security Workstream of the MLCommons AI Risk and Reliability working group. See [Review Process](governance/review-process.md) for the pipeline and technical review criteria.
 
 ### Possible Outcomes
 
-1. **New Leaf** - Attack is novel and well-documented; added to taxonomy as new leaf node
-2. **Variant Enrichment** - Attack is variant of existing category; enriches existing node with new evidence
-3. **Structural Revision Needed** - Taxonomy structure should be modified to accommodate this attack
-4. **Request for Iteration** - Does not yet meet criteria; feedback provided on how to strengthen the submission
+1. **New Leaf**: Attack is novel and well-documented; added to taxonomy as new leaf node.
+2. **Variant Enrichment**: Attack is a variant of an existing category; enriches existing node with new evidence.
+3. **Structural Revision**: Taxonomy structure should be modified to accommodate this attack.
+4. **Iteration Requested**: Does not yet meet criteria; feedback is provided on how to strengthen the submission.
 
 ### Review Criteria
 
 Submissions are evaluated on:
 
-- **Novelty** - Is this a genuinely new attack or a well-documented variant?
-- **Placement** - Does the categorization fit the existing taxonomy structure?
-- **Evidence** - Are claims about effectiveness well-documented and reproducible?
-- **Splitting Rules** - Are definitions and boundaries clear and unambiguous?
-- **Executability** - Can peers reproduce the testing or understand the mechanism?
-- **Responsible framing** - Does the submission describe mechanisms structurally, consistent with the "What NOT to Submit" guidelines?
-
-### Severity Assessment
-
-Contributions are prioritized based on attack severity:
-
-| Level    | Description                                          | Priority         |
-| -------- | ---------------------------------------------------- | ---------------- |
-| Critical | Affects broad model families with high success rates | Expedited review |
-| High     | Significant risk to important model classes          | High priority    |
-| Medium   | Moderate risk or narrow applicability                | Standard review  |
-| Low      | Niche applicability or lower effectiveness           | Standard review  |
-
-See `governance/severity-framework.md` for detailed severity criteria.
+- **Novelty**: Is this a genuinely new attack or a well-documented variant?
+- **Placement**: Does the categorization fit the existing taxonomy structure?
+- **Evidence**: Are claims about effectiveness well-documented and reproducible?
+- **Splitting Rules**: Are definitions and boundaries clear and unambiguous?
+- **Executability**: Can peers reproduce the testing or understand the mechanism?
+- **Responsible framing**: Does the submission describe mechanisms structurally, consistent with the "What NOT to Submit" guidelines?
 
 ## Community Standards
 
@@ -252,7 +232,6 @@ All contributors must adhere to the [MLCommons Code of Conduct](https://mlcommon
 - [Taxonomy Schema](taxonomy/SCHEMA.md) - Detailed specification for all taxonomy fields
 - [Attack Coding Guidelines](docs/attack-coding-process.md) - Patterns and conventions for attack implementations
 - [Taxonomy Structure Template](.github/TAXONOMY_STRUCTURE_TEMPLATE.md) - Detailed form for taxonomy structure proposals
-- [Severity Framework](governance/severity-framework.md) - Detailed severity assessment criteria
 - [MLCommons Code of Conduct](https://mlcommons.org/codeofconduct/)
 
 ## Getting Started

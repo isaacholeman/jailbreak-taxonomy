@@ -25,7 +25,7 @@ What is incorrect, ambiguous, or misleading?
 [Explain why this is an error: incorrect definition, unclear language, wrong cross-reference, missing information, etc.]
 
 **Impact:**
-[How does this affect users: confusion about mechanism classification, incorrect severity assessment, broken reference, etc.]
+[How does this affect users: confusion about mechanism classification, incorrect classification, broken reference, etc.]
 
 ## Suggested Correction
 

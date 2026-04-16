@@ -60,9 +60,8 @@ jailbreak-taxonomy/
 │   ├── PULL_REQUEST_TEMPLATE.md # Default PR template
 │   └── TAXONOMY_STRUCTURE_TEMPLATE.md  # Detailed form for taxonomy structure proposals
 ├── governance/
-│   ├── maintainers.md           # Governance roles, selection, appeals, code of conduct
-│   ├── review-process.md        # Review pipeline, validation, update cadence
-│   └── severity-framework.md    # Severity levels, success rate measurement, prevalence
+│   ├── maintainers.md           # Working group ownership, conflicts of interest, code of conduct, contact
+│   └── review-process.md        # Review pipeline and technical review criteria
 └── releases/
     └── v0.7.0/
         └── taxonomy-snapshot.yaml
@@ -117,13 +116,13 @@ Monthly stability releases produce a tagged snapshot with a stopping-rule check,
 
 ## Governance
 
-The taxonomy is maintained under the governance framework described in:
+The taxonomy is maintained by the Security Workstream of the MLCommons AI Risk and Reliability working group. All submissions are reviewed against the criteria documented in [`governance/review-process.md`](governance/review-process.md). The methodological basis is described in the v0.7 methodology paper.
 
-- [Maintainer Roles and Selection](governance/maintainers.md)
-- [Review Process](governance/review-process.md)
-- [Severity Framework](governance/severity-framework.md)
+See also:
 
-The review process follows a five-stage pipeline (Submission → Triage → Technical Review → Placement Decision → Merge/Reject) with defined timelines and criteria. All contributors and reviewers adhere to the [MLCommons Code of Conduct](https://mlcommons.org/policies/).
+- [Governance overview](governance/maintainers.md)
+- [Review process](governance/review-process.md)
+- [MLCommons Code of Conduct](https://mlcommons.org/policies/)
 
 ## License
 

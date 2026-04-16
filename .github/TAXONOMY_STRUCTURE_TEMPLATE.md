@@ -77,15 +77,6 @@ For attack catalog additions (adding a documented attack to an existing leaf), u
 - 
 - 
 
-**Severity Assessment:**
-- [ ] Critical (high success rate across broad model families)
-- [ ] High (significant risk to important model classes)
-- [ ] Medium (moderate risk or narrow applicability)
-- [ ] Low (niche applicability or lower effectiveness)
-
-**Justification:**
-[1-2 sentences.]
-
 ---
 
 ## Checklist

@@ -14,6 +14,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 - `taxonomy/attacks.yaml` is now the single source of truth for attack catalog tables; per-leaf, per-family, and cross-family overview tables are regenerated from it
+- Governance documentation simplified: `governance/maintainers.md` and `governance/review-process.md` now reference the v0.7 methodology paper (Maple et al., 2026) as the canonical source of maintenance methodology, and state that all submissions are reviewed by the Security Workstream of the MLCommons AI Risk and Reliability working group
+
+### Removed
+- `governance/severity-framework.md` and all cross-references (README, `mkdocs.yml`, `CONTRIBUTING.md`, issue and taxonomy-structure templates). Severity assessment is used internally by MLCommons staff for benchmark construction and is not published as a commitment of taxonomy maintenance
 
 ## [0.7.0] - 2026-02-16
 
@@ -24,14 +28,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Machine-readable taxonomy definition in YAML format (taxonomy.yaml)
 - Human-readable taxonomy overview with prevalence data and evidence summaries
 - Contribution guidelines and structured submission templates
-- Governance framework documentation: maintainer roles, peer review process, severity assessment methodology
+- Governance framework documentation: maintainer roles and peer review process
 - GitHub issue and pull request templates for community contributions
 - Initial attack placements with evidence from testing across open-weight models
 - Cross-referencing guide for related attacks across taxonomy branches
 
 ### Documentation
 - Taxonomy overview with family descriptions and motivations
-- Severity framework with assessment criteria and justification methodology
 - Contribution workflow documentation for new mechanisms, categories, and placements
 - Examples of structural descriptions (without exposing attack payloads)
 
@@ -49,4 +52,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## Contribution and Review
 
-To propose changes to the taxonomy, open a GitHub issue using the Taxonomy Contribution template or submit a pull request with the structured submission template completed. All contributions are reviewed by the maintenance team for consistency with the taxonomy methodology and severity framework.
+To propose changes to the taxonomy, open a GitHub issue using the Taxonomy Contribution template or submit a pull request with the structured submission template completed. All contributions are reviewed by the working group for consistency with the taxonomy methodology.

@@ -62,8 +62,7 @@ nav:
           - Fragment Assembly: taxonomy/families/composition-ordering/fragment-assembly.md
   - Contributing: CONTRIBUTING.md
   - Governance:
-      - Maintainers: governance/maintainers.md
+      - Overview: governance/maintainers.md
       - Review Process: governance/review-process.md
-      - Severity Framework: governance/severity-framework.md
   - Taxonomy Structure Template: .github/TAXONOMY_STRUCTURE_TEMPLATE.md
   - Changelog: CHANGELOG.md
