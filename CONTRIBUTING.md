@@ -13,7 +13,7 @@ MLCommons is an independent nonprofit that works across industry, academia, civi
 We welcome contributions from:
 
 - MLCommons working group members
-- Academic researchers in AI safety and adversarial machine learning
+- Academic researchers in AI security and adversarial machine learning
 - Industry security teams and red-team practitioners
 - Independent security researchers
 - Standards body representatives
@@ -25,8 +25,8 @@ Listed from simplest to most involved.
 
 ### 1. Get Involved
 
-- **Star the repository.** Helps others in the AI safety community find this work. [Star mlcommons/jailbreak-taxonomy on GitHub](https://github.com/mlcommons/jailbreak-taxonomy).
-- **Join the MLCommons AI Safety working group.** The working group that maintains this taxonomy and the broader safety benchmarking effort. [Sign up at mlcommons.org](https://mlcommons.org/working-groups/ai-risk-reliability/ai-risk-reliability/).
+- **Star the repository.** Helps others in the AI security community find this work. [Star mlcommons/jailbreak-taxonomy on GitHub](https://github.com/mlcommons/jailbreak-taxonomy).
+- **Join the Security Workstream of the MLCommons AI Risk and Reliability working group.** The workstream that maintains this taxonomy and the broader risk and reliability benchmarking effort. [Sign up at mlcommons.org](https://mlcommons.org/working-groups/ai-risk-reliability/ai-risk-reliability/).
 - **Share the project.** Link to this repository in papers, blog posts, talks, or social media.
 
 ### 2. Documentation Improvements
@@ -54,10 +54,23 @@ Most submissions reference an existing paper, blog post, or technical report. Su
 
 **How to submit:**
 
-- **If you know where the attack belongs in the taxonomy**, open a pull request adding the attack to the appropriate category document under its `## Attack Catalog` section, following the existing table format. Also add a corresponding entry to `taxonomy/attacks.yaml`.
+- **If you know where the attack belongs in the taxonomy**, open a pull request adding a new entry to `taxonomy/attacks.yaml` (see [Regenerating Attack Tables](#regenerating-attack-tables) below). That single file is the source of truth; the category and family Attack Catalog tables are generated from it.
 - **If you're unsure about placement or have partial information**, [open an Attack Submission issue](../../issues/new?template=attack-submission.md). The issue template will guide you through what to include. The maintainers will handle taxonomy placement.
 
 A paper link with a sentence about the mechanism is enough to open an issue. Partial information is fine.
+
+#### Regenerating Attack Tables
+
+The Attack Catalog tables in each family README and each category document are generated from `taxonomy/attacks.yaml`. After editing that file, regenerate the tables locally and commit the result:
+
+```
+pip install pyyaml
+python scripts/generate_tables.py
+```
+
+CI runs `python scripts/generate_tables.py --check` on every pull request and fails if the generated tables are out of sync with `attacks.yaml`.
+
+Sections between the `<!-- BEGIN GENERATED: attack-catalog -->` and `<!-- END GENERATED: attack-catalog -->` markers are overwritten by the script; edit `attacks.yaml` instead.
 
 ### 4. Coded Attack Contributions
 
@@ -127,7 +140,7 @@ Use the issue templates to submit attack reports, taxonomy proposals, or bug rep
    git checkout -b taxonomy/propose-new-leaf
    ```
 
-3. **Make your changes.** For attack additions, add a row to the relevant category document's Attack Catalog table and a corresponding entry in `taxonomy/attacks.yaml`. For taxonomy structure proposals, include a completed [taxonomy structure template](.github/TAXONOMY_STRUCTURE_TEMPLATE.md) in your PR.
+3. **Make your changes.** For attack additions, add an entry to `taxonomy/attacks.yaml` and run `python scripts/generate_tables.py` to refresh the catalog tables (see [Regenerating Attack Tables](#regenerating-attack-tables)). For taxonomy structure proposals, include a completed [taxonomy structure template](.github/TAXONOMY_STRUCTURE_TEMPLATE.md) in your PR.
 
 4. **Open a Pull Request** with a clear title and a link to any supporting papers or documentation.
 

@@ -50,14 +50,14 @@ nav:
       - Encoding Abuse:
           - Family Overview: taxonomy/families/encoding-abuse/README.md
           - Encoding & Unicode Tricks: taxonomy/families/encoding-abuse/encoding-unicode-tricks.md
-          - Wrappers & Schemas: taxonomy/families/encoding-abuse/wrappers-schemas.md
+          - Wrappers & Schemas: taxonomy/families/encoding-abuse/wrappers-and-schemas.md
       - Overt Carriers:
           - Family Overview: taxonomy/families/overt-carriers/README.md
           - Direct Override Patterns: taxonomy/families/overt-carriers/direct-override-patterns.md
-          - Role-Play & Template Jailbreaks: taxonomy/families/overt-carriers/roleplay-template-jailbreaks.md
+          - Role-Play & Template Jailbreaks: taxonomy/families/overt-carriers/roleplay-and-template-jailbreaks.md
       - Composition & Ordering:
           - Family Overview: taxonomy/families/composition-ordering/README.md
-          - Context Framing & Deception: taxonomy/families/composition-ordering/context-framing-deception.md
+          - Context Framing & Deception: taxonomy/families/composition-ordering/context-framing-and-deception.md
           - Fragment Assembly: taxonomy/families/composition-ordering/fragment-assembly.md
   - Contributing: CONTRIBUTING.md
   - Governance:

@@ -2,11 +2,11 @@ metadata:
   description: Machine-readable catalog of jailbreak attacks classified in the MLCommons taxonomy.
   taxonomy_version: 0.7.0
   total_attacks: 113
-  source: MLCommons AI Safety Working Group
+  source: MLCommons AI Risk and Reliability Working Group
   license: CC-BY-4.0
 attacks:
 - name: 'A False Sense of Safety: Unsafe Information Leakage in Aligned Language Models'
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://arxiv.org/html/2407.02551v1
   venue: ICLR 2025
   year: 2025
@@ -15,7 +15,7 @@ attacks:
     (used as a victim model and baseline) BAAI General Embedding Reranker (used as the reward / scoring model) GPT-4 (used
     to generate the Forbidden Questions dataset) text-davinci-002 (used to generate the DangerousQA dataset)
 - name: Adaptive Log-Prob
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://arxiv.org/abs/2404.02151
   repo_url: https://github.com/tml-epfl/llm-adaptive-attacks
   venue: ICLR 2025
@@ -26,7 +26,7 @@ attacks:
     3.5
   - explicitly mentioned in the repo updates)
 - name: CodeChameleon
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://arxiv.org/abs/2402.16717
   repo_url: https://github.com/huizhang-L/CodeChameleon
   venue: Arxiv
@@ -40,7 +40,7 @@ attacks:
   - GPT-3.5-1106
   - GPT-4-1106
 - name: 'DRA: Jailbreaking Large Language Models in A Disguise of Review Assistant'
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://arxiv.org/abs/2402.18104
   repo_url: https://github.com/LLM-DRA/DRA
   venue: USENIX Security ’24
@@ -54,7 +54,7 @@ attacks:
   - ChatGPT (gpt-3.5-turbo-0613 API)
   - GPT-4 (gpt-4-0613 API &amp; GPT-4 web)
 - name: 'Echo Chamber: Context Poisoning Jailbreak'
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://neuraltrust.ai/blog/echo-chamber-context-poisoning-jailbreak
   repo_url: https://github.com/NeuralTrust/echo-chamber
   venue: NeuralTrust Blog
@@ -66,14 +66,14 @@ attacks:
   - Gemini-2.0-flash-lite
   - Gemini-2.5-flash
 - name: Harnessing Task Overload for Scalable Jailbreak Attacks
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://arxiv.org/abs/2410.04190
   venue: ICLR 2025 (Under review)
   year: 2025
   models:
   - GPT-4o GPT-4-Turbo GPT-3.5-Turbo Llama-2-7B-Chat Llama-2-13B-Chat Llama-2-70B-Chat Vicuna-7B Vicuna-13B Qwen-7B-Chat Mistral-7B-Instruct
 - name: 'Hide Your Malicious Goal into Benign Narratives: Jailbreaking LLMs via Neural Carrier Articles'
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://arxiv.org/abs/2408.11182
   venue: Arxiv
   year: 2024
@@ -81,7 +81,7 @@ attacks:
   - Vicuna-13B Llama-2-7B Llama-2-13B (for parameter/decoding experiments) Llama-3-8B Llama-3-7B (judge model in JailbreakBench)
     GPT-3.5 (target model and also used as composer/context LLM) GPT-4 Gemini-1.5 Claude-3
 - name: 'LIAR: Long-Instruction Adversarial Red-teaming'
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://arxiv.org/abs/2412.05232
   venue: Arxiv
   year: 2024
@@ -100,7 +100,7 @@ attacks:
   - Falcon-7B
   - Pythia-12B
 - name: 'LLM-Fuzzer: Scaling Assessment of Large Language Model Jailbreaks'
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://www.usenix.org/system/files/usenixsecurity24-yu-jiahao.pdf
   repo_url: https://github.com/sherdencooper/GPTFuzz
   venue: USENIX Security ’24
@@ -122,7 +122,7 @@ attacks:
   - PaLM2 (chat-bison-001) ChatGPT (gpt-3.5-turbo
   - used as the fine-tuned RoBERTa classifier
 - name: 'LLMs Can Be Dangerous Reasoners: Analyzing-based Jailbreak Attack on LLMs'
-  leaf: composition-ordering.context-framing.benign-wrapper
+  leaf: composition-ordering.context-framing-and-deception.benign-wrapper-harmful-core
   paper_url: https://arxiv.org/abs/2407.16205
   repo_url: https://github.com/theshi-1128/llm-defense
   venue: arXiv
@@ -131,7 +131,7 @@ attacks:
   - GPT-3.5-Turbo GPT-4o-2024-08-06 GPT-4o-2024-11-20 GLM-4-9B-Chat Qwen2-7B-Instruct Qwen2-72B-Instruct Llama-3.1-8B-Instruct
     Llama-3.1-70B-Instruct
 - name: Attention Shifting
-  leaf: composition-ordering.context-framing.scenario-assembly
+  leaf: composition-ordering.context-framing-and-deception.scenario-based-assembly
   paper_url: https://ojs.aaai.org/index.php/AAAI/article/view/34553/36708
   venue: AAAI 2025
   year: 2025
@@ -143,7 +143,7 @@ attacks:
   - GPT-3.5
   - GPT-4o
 - name: 'DeepInception: Hypnotize Large Language Model to Be Jailbreaker'
-  leaf: composition-ordering.context-framing.scenario-assembly
+  leaf: composition-ordering.context-framing-and-deception.scenario-based-assembly
   paper_url: https://arxiv.org/abs/2311.03191
   repo_url: https://github.com/tmlr-group/DeepInception
   venue: Arxiv
@@ -151,7 +151,7 @@ attacks:
   models:
   - Falcon Vicuna-v1.5 Llama-2 GPT-3.5 GPT-4 GPT-4V / GPT-4o
 - name: 'PathSeeker: Reinforcement Learning Guided Path Exploration for Jailbreaking Large Language Models'
-  leaf: composition-ordering.context-framing.scenario-assembly
+  leaf: composition-ordering.context-framing-and-deception.scenario-based-assembly
   paper_url: https://arxiv.org/abs/2409.14177
   venue: ArXiv
   year: 2024
@@ -160,7 +160,7 @@ attacks:
     Qwen2-72B-Instruct (sometimes written without “-instruct”) Llama-2-7B-Chat Llama-2-13B-Chat Llama-3-70B Llama-3.1-8B Llama-3.1-70B
     Llama-3.1-405B Gemma2-8B-Instruct Mistral-NeMo Vicuna-7B GPT-4o-mini (judgement model) all-MiniLM-L6-v2
 - name: 'Playing the Fool: Jailbreaking LLMs and Multimodal LLMs with Out-of-Distribution Strategy (JOOD)'
-  leaf: composition-ordering.context-framing.scenario-assembly
+  leaf: composition-ordering.context-framing-and-deception.scenario-based-assembly
   paper_url: https://arxiv.org/abs/2503.20823
   repo_url: https://github.com/naver-ai/JOOD
   venue: CVPR 2025
@@ -175,7 +175,7 @@ attacks:
   - LLaVA-1.5 13B
   - Qwen2-VL-7B
 - name: ReNeLLM
-  leaf: composition-ordering.context-framing.scenario-assembly
+  leaf: composition-ordering.context-framing-and-deception.scenario-based-assembly
   paper_url: https://arxiv.org/abs/2311.08268
   repo_url: https://github.com/NJUNLP/ReNeLLM
   venue: NAACL 2024
@@ -183,7 +183,7 @@ attacks:
   models:
   - Llama-2-Chat-7B Llama-2-Chat-13B Llama-2-Chat-70B Vicuna-7B Vicuna-13B GPT-3.5 GPT-4 Claude-2
 - name: 'SoP: Jailbreaking LLMs via Social Facilitation'
-  leaf: composition-ordering.context-framing.scenario-assembly
+  leaf: composition-ordering.context-framing-and-deception.scenario-based-assembly
   paper_url: https://arxiv.org/abs/2407.01902
   repo_url: https://github.com/sufenlp/SeqAR
   venue: NAACL 2025
@@ -193,7 +193,7 @@ attacks:
   - newer ChatGPT variant) GPT-4-0613 (GPT-4) GPT-4o Gemini-1.5-Pro Judgement model A DeBERTaV3-based classifier is trained
     as the automatic judge for attack success.
 - name: 'TASTLE: Distract Large Language Models via Automatic Jailbreak Attack Generation'
-  leaf: composition-ordering.context-framing.scenario-assembly
+  leaf: composition-ordering.context-framing-and-deception.scenario-based-assembly
   paper_url: https://arxiv.org/abs/2403.08424
   repo_url: https://github.com/sufenlp/AttanttionShiftJailbreak
   venue: EMNLP 2024
@@ -206,7 +206,7 @@ attacks:
   - GPT-3.5-1106
   - GPT-4-0613 DeBERTaV3-large (fine-tuned classifier)
 - name: ICA (In-context Attack)
-  leaf: composition-ordering.fragment-assembly.interleaving
+  leaf: composition-ordering.fragment-assembly.interleaving-benign-harmful-sections
   paper_url: https://arxiv.org/pdf/2310.06387
   repo_url: https://github.com/llm-attacks/llm-attacks/
   venue: EMNLP
@@ -215,14 +215,14 @@ attacks:
   - GPT-4
   - Vicuna
 - name: Plentiful Jailbreaks with String Compositions
-  leaf: composition-ordering.fragment-assembly.interleaving
+  leaf: composition-ordering.fragment-assembly.interleaving-benign-harmful-sections
   paper_url: https://arxiv.org/abs/2411.01084
   venue: NeurIPS 2024
   year: 2024
   models:
   - Claude 3.5 Sonnet Claude 3 Haiku Claude 3 Opus GPT-4o GPT-4o-min
 - name: Breaking the Ceiling
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://arxiv.org/abs/2505.21277
   repo_url: https://github.com/Aries-iai/CL-GSO
   venue: ACL 2025
@@ -231,7 +231,7 @@ attacks:
   - GPT-3.5 (used as the red-teaming / attack model) GPT-4o (used as both evaluation model and victim model) Llama3-8B Qwen-2.5-7B
     Claude-3.5-Sonnet o1 (tested via transferability of the generated jailbreak prompts)
 - name: Diversity Helps Jailbreak LLMs
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://arxiv.org/abs/2411.04223
   venue: NAACL 2025
   year: 2025
@@ -239,7 +239,7 @@ attacks:
   - Vicuna-13B-v1.5 Llama-2-7B-chat Mistral-7B-Instruct-v0.1 Qwen2-7B-Instruct GPT-3.5-turbo (target model + also used as
     attacker and score/evaluator LLM) GPT-4 GPT-4o GPT-4o-mini Gemini-1.5-Pro
 - name: EasyJailbreak — Modular Attack Framework
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://arxiv.org/abs/2403.12171
   repo_url: https://github.com/EasyJailbreak/EasyJailbreak
   venue: arXiv
@@ -248,7 +248,7 @@ attacks:
   - GPT-3.5-Turbo GPT-4 Llama-2-7B-Chat Llama-2-13B-Chat Llama-2-70B-Chat Vicuna-7B Vicuna-13B Baichuan2-13B-Chat InternLM2-Chat-20B
     Qwen1.5-14B-Chat
 - name: 'EnJa: Ensemble Jailbreak on Large Language Models'
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://arxiv.org/abs/2408.03603
   venue: arXiv
   year: 2024
@@ -256,14 +256,14 @@ attacks:
   - Vicuna-7B Vicuna-13B-v1.5 (also used as attacker &amp; judge model) Llama-2-7B Llama-2-13B GPT-3.5-turbo-0125 GPT-4-0613
     GPT-4o
 - name: GCG+PAIR Hybrid
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://arxiv.org/abs/2506.21972
   venue: ArXiv
   year: 2025
   models:
   - Vicuna-7B Vicuna-7B-v1.5 Llama-2-7B Llama-3 DeepSeek-R1-70B Meta-Llama-Guard-2-8B Mistral-sorry-bench
 - name: 'PAIR: Prompt Automatic Iterative Refinement'
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://arxiv.org/abs/2310.08419
   repo_url: https://github.com/patrickrchao/Jailbreaking-LLMs
   venue: 2025 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)
@@ -271,7 +271,7 @@ attacks:
   models:
   - Vicuna-13B GPT-3.5 GPT-4 Claude-2 PaLM-2 Gemini-Pro
 - name: 'Quack: Evolutionary Jailbreaking'
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://openreview.net/forum?id=1zt8GWZ9sc
   venue: ICLR 2024 via OpenReview
   year: 2024
@@ -284,7 +284,7 @@ attacks:
   - 0.20.0
   - 0.28.0
 - name: 'TAP: Tree of Attacks with Pruning'
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://arxiv.org/html/2312.02119v3
   repo_url: https://github.com/RICommunity/TAP
   venue: NeurIPS 2024
@@ -297,7 +297,7 @@ attacks:
   - used as a guardrail and as an evaluator variant) Data-generation model WizardVicuna-30B-Uncensored (used to generate additional
     red-teaming goals / held-out dataset)
 - name: 'When LLM Meets DRL: Targeted Adversarial Jailbreak Attack via Deep Reinforcement Learning (RLbreaker)'
-  leaf: composition-ordering.fragment-assembly.prompt-optimization
+  leaf: composition-ordering.fragment-assembly.jailbreak-prompt-optimization-and-search
   paper_url: https://arxiv.org/abs/2406.08705
   repo_url: https://github.com/XuanChen-xc/RLbreaker
   venue: NeurIPS 2024
@@ -310,7 +310,7 @@ attacks:
   - Mixtral-8x7B-Instruct
   - GPT-3.5-turbo
 - name: 'DrAttack: Prompt Decomposition and Reconstruction Makes Powerful Attack'
-  leaf: composition-ordering.fragment-assembly.token-shuffling
+  leaf: composition-ordering.fragment-assembly.token-phrase-shuffling
   paper_url: https://arxiv.org/abs/2402.16914
   repo_url: https://github.com/xirui-li/DrAttack
   venue: EMNLP 2024
@@ -318,7 +318,7 @@ attacks:
   models:
   - Closed-source models GPT-3.5-turbo GPT-4 Gemini-Pro Open-source models Vicuna-7B Llama-2-7B Llama-2-13B
 - name: ASCII Art Attack
-  leaf: encoding-abuse.encoding-unicode.ascii
+  leaf: encoding-abuse.encoding-unicode-tricks.ascii-encoding
   paper_url: https://arxiv.org/abs/2402.11753
   repo_url: https://github.com/uw-nsl/ArtPrompt
   venue: ACL 2024
@@ -338,7 +338,7 @@ attacks:
   - GPT-4-0613
   - Llama2-Chat-7B GPT-4 (used as GPT-Judge to compute Harmfulness Score)
 - name: 'Read Over the Lines: Jailbreak LLMs via Camouflaging Profanity in ASCII Art'
-  leaf: encoding-abuse.encoding-unicode.ascii
+  leaf: encoding-abuse.encoding-unicode-tricks.ascii-encoding
   paper_url: https://arxiv.org/html/2409.18708v3
   repo_url: https://github.com/Serbernari/ToxASCII
   venue: WOAH 2025
@@ -357,7 +357,7 @@ attacks:
   - Detoxify
   - Google Perspective API
 - name: Symbolic Mathematics
-  leaf: encoding-abuse.encoding-unicode.ascii
+  leaf: encoding-abuse.encoding-unicode-tricks.ascii-encoding
   paper_url: https://arxiv.org/abs/2409.11445
   venue: ocially Responsible Language Modelling Research (SoLaR) Workshop at NeurIPS 2024
   year: 2024
@@ -366,7 +366,7 @@ attacks:
     Google Gemini 1.5 Pro (default safety) Gemini 1.5 Pro (Block None / no safety) Gemini 1.5 Flash (default safety) Gemini
     1.5 Flash (Block None / no safety) Meta Llama 3.1 70B
 - name: ACE
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://arxiv.org/abs/2402.10601
   venue: ArXiv
   year: 2024
@@ -374,7 +374,7 @@ attacks:
   - ChatGPT (OpenAI) GPT-4 (OpenAI) Gemini-Pro (Google
   - Gemini-Pro 1.0)
 - name: Base64 Encoding (Promptfoo blog)
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://www.promptfoo.dev/blog/how-to-jailbreak-llms/#base-encoding
   repo_url: https://github.com/promptfoo/promptfoo
   venue: Promptfoo Blog
@@ -385,7 +385,7 @@ attacks:
   - Gemini-style models (Google)
   - Llama-family open-source models
 - name: Endless Jailbreaks with Bijection
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://arxiv.org/abs/2410.01294
   repo_url: https://github.com/haizelabs/bijection-learning
   venue: ICLR 2025
@@ -397,7 +397,7 @@ attacks:
   - GPT-4o-mini
   - GPT-4o
 - name: 'GPT-4 is Too Smart to Be Safe: Stealthy Chat with LLMs via Cipher'
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://arxiv.org/abs/2308.06463
   repo_url: https://github.com/RobustNLP/CipherChat
   venue: ICLR 2024
@@ -405,21 +405,21 @@ attacks:
   models:
   - ChatGPT (GPT-3.5) GPT-4
 - name: 'JAM: Jailbreaking Large Language Models via Malicious Instruction Sequences in Cipher Text'
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://arxiv.org/abs/2405.20413
   venue: NeurIPS 2024
   year: 2024
   models:
   - GPT-3.5 GPT-4 Gemini (Gemini-Pro style moderation-guarded model) Llama-3
 - name: Low-Resource Languages Jailbreak GPT-4
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://arxiv.org/abs/2310.02446
   venue: NeurIPS 2023 SoLaR Workshop
   year: 2023
   models:
   - GPT-4
 - name: MetaCipher
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://arxiv.org/abs/2506.22557
   repo_url: https://github.com/xzy-101/SAFER-code
   venue: Arxiv
@@ -438,7 +438,7 @@ attacks:
   - Gemini-2.5-Pro-exp-03-25
   - O1-mini-2024-09-12
 - name: Multilingual Jailbreak Challenges in Large Language Models
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://arxiv.org/abs/2310.06474
   repo_url: https://github.com/DAMO-NLP-SG/multilingual-safety-for-LLMs
   venue: ArXiv
@@ -446,14 +446,14 @@ attacks:
   models:
   - ChatGPT (GPT-3.5) GPT-4
 - name: 'Sandwich Attack: Multi-Language Mixture Enhances the Jailbreak of Large Language Models'
-  leaf: encoding-abuse.encoding-unicode.base64-obfuscation
+  leaf: encoding-abuse.encoding-unicode-tricks.base64-url-obfuscation
   paper_url: https://arxiv.org/html/2404.07242v1
   venue: TrustNLP 2024
   year: 2024
   models:
   - Google Bard Gemini Pro LLaMA-2-70B-Chat GPT-3.5-Turbo GPT-4 Claude-3-Opus
 - name: 'Emoji Attack: Enhancing Jailbreak Attacks Against Judge LLM Detection'
-  leaf: encoding-abuse.encoding-unicode.unicode-bidi
+  leaf: encoding-abuse.encoding-unicode-tricks.unicode-bidi-zero-width
   paper_url: https://arxiv.org/abs/2411.01077
   repo_url: https://github.com/zhipeng-wei/EmojiAttack
   venue: ICML 2025
@@ -463,7 +463,7 @@ attacks:
   - Llama Guard 2
   - ShieldLM (internlm2-7b- gpt-3.5-turbo gtr-t5-xl
 - name: TokenBreak
-  leaf: encoding-abuse.encoding-unicode.unicode-bidi
+  leaf: encoding-abuse.encoding-unicode-tricks.unicode-bidi-zero-width
   paper_url: https://arxiv.org/abs/2506.07948
   venue: Arxiv
   year: 2025
@@ -478,7 +478,7 @@ attacks:
   - each with BPE / WordPiece / Unigram tokenizers). Qwen3-0.6B (receives both original and TokenBreak-modified prompts to
     demonstrate that the LLM still understands them while the classifiers are fooled).
 - name: Effective and Evasive Fuzz Testing–Driven Jailbreaking Attacks on LLMs (PAPILLON)
-  leaf: encoding-abuse.wrappers-schemas.json-markdown
+  leaf: encoding-abuse.wrappers-and-schemas.json-markdown-code-blocks
   paper_url: https://www.usenix.org/system/files/usenixsecurity25-gong-xueluan.pdf
   repo_url: https://github.com/aaFrostnova/Papillon
   venue: USENIX Security ’25
@@ -493,7 +493,7 @@ attacks:
   - Gemini-Pro ChatGPT (GPT- fine-tuned RoBERTa (harmful-content detector)
   - ChatGPT (second-level judge checking relevance &amp; jailbreak status)
 - name: 'FuzzLLM: A Novel Fuzzing Framework for Large Language Models in Safety Settings'
-  leaf: encoding-abuse.wrappers-schemas.json-markdown
+  leaf: encoding-abuse.wrappers-and-schemas.json-markdown-code-blocks
   paper_url: https://arxiv.org/abs/2309.05274
   repo_url: https://github.com/RainJamesY/FuzzLLM
   venue: ICASSP 2024
@@ -501,7 +501,7 @@ attacks:
   models:
   - GPT-3.5 (OpenAI ChatGPT-3.5) GPT-4 Vicuna-13B LLaMA-2-7B-Chat LLaMA-2-13B-Chat LLaMA-2-70B-Chat
 - name: GPTFuzzer
-  leaf: encoding-abuse.wrappers-schemas.json-markdown
+  leaf: encoding-abuse.wrappers-and-schemas.json-markdown-code-blocks
   paper_url: https://arxiv.org/abs/2309.10253
   repo_url: https://github.com/sherdencooper/GPTFuzz
   venue: USENIX Security ’24
@@ -521,7 +521,7 @@ attacks:
   - Claude2
   - PaLM2
 - name: puppetry
-  leaf: encoding-abuse.wrappers-schemas.json-markdown
+  leaf: encoding-abuse.wrappers-and-schemas.json-markdown-code-blocks
   paper_url: https://hiddenlayer.com/innovation-hub/novel-universal-bypass-for-all-major-llms/
   venue: HiddenLayer Innovation Hub
   year: 2025
@@ -548,7 +548,7 @@ attacks:
   - Qwen2.5 72B
   - Mixtral 8x22B.
 - name: 'StructTransform: A Scalable Attack Surface for Safety-Aligned LLMs'
-  leaf: encoding-abuse.wrappers-schemas.json-markdown
+  leaf: encoding-abuse.wrappers-and-schemas.json-markdown-code-blocks
   paper_url: https://arxiv.org/abs/2502.11853
   repo_url: https://github.com/qcri/StructTransformBench
   venue: ESORICS 2025
@@ -564,7 +564,7 @@ attacks:
   - Llama-3-8B + Circuit Breakers
   - Llama-3-8B + LAT (Latent Adversarial Training)
 - name: 'AdaPPA: Adaptive Position Prefill Attack Against Aligned LLMs'
-  leaf: encoding-abuse.wrappers-schemas.length-prefix-suffix
+  leaf: encoding-abuse.wrappers-and-schemas.length-prefix-suffix-wrappers
   paper_url: https://arxiv.org/abs/2409.07503
   repo_url: https://github.com/Yummy416/AdaPPA
   venue: arXiv
@@ -576,7 +576,7 @@ attacks:
   - Baichuan2-13B GPT-4o-Mini
   - GPT-4o
 - name: 'Cats Confuse Reasoning LLM: Query-Agnostic Adversarial Triggers for Reasoning Models'
-  leaf: encoding-abuse.wrappers-schemas.length-prefix-suffix
+  leaf: encoding-abuse.wrappers-and-schemas.length-prefix-suffix-wrappers
   paper_url: https://arxiv.org/abs/2503.01781
   repo_url: https://github.com/collinear-ai/CatAttack
   venue: CoLM 2025
@@ -592,7 +592,7 @@ attacks:
   - Mistral-Small-24B-Instruct-2501 GPT-4o-mini (primary judge)
   - Gemini 2.5 Flash (alternative judge for sensitivity analysis)
 - name: Curiosity‑driven Red Teaming (2024)
-  leaf: encoding-abuse.wrappers-schemas.length-prefix-suffix
+  leaf: encoding-abuse.wrappers-and-schemas.length-prefix-suffix-wrappers
   paper_url: https://arxiv.org/abs/2402.19464
   repo_url: https://github.com/Improbable-AI/curiosity_redteam
   venue: ICLR 2024
@@ -606,7 +606,7 @@ attacks:
   - sentence-embedding model (BERT-style
   - for semantic diversity)
 - name: HIMRD (2024)
-  leaf: encoding-abuse.wrappers-schemas.length-prefix-suffix
+  leaf: encoding-abuse.wrappers-and-schemas.length-prefix-suffix-wrappers
   paper_url: https://arxiv.org/abs/2412.05934
   repo_url: https://github.com/MaTengSYSU/HIMRD-jailbreak
   venue: ICCV 2025
@@ -615,7 +615,7 @@ attacks:
   - LLaVA-1.5-7B LLaVA-1.5-13B LLaVA-1.6-7B LLaVA-1.6-13B InstructBLIP-Vicuna-7B Qwen-VL-Chat CogVLM-Chat GPT-4V Gemini-Pro-Vision
     Claude-3-Opus
 - name: AutoDAN
-  leaf: overt-carriers.direct-override.dan-composites
+  leaf: overt-carriers.direct-override-patterns.dan-style-composites
   paper_url: https://arxiv.org/abs/2306.11644
   venue: ICLR 2024
   year: 2024
@@ -625,7 +625,7 @@ attacks:
     GPT-3.5-turbo-0301) – used to generate synthetic textbook-style data Replit 2.7B – baseline code model for comparison
     StarCoder 15.5B – another baseline code model for comparison
 - name: AutoDAN (2023) – GA
-  leaf: overt-carriers.direct-override.dan-composites
+  leaf: overt-carriers.direct-override-patterns.dan-style-composites
   paper_url: https://arxiv.org/abs/2310.04451
   repo_url: https://github.com/SheltonLiu-N/AutoDAN
   venue: ICLR 2024
@@ -633,7 +633,7 @@ attacks:
   models:
   - Vicuna-7B Guanaco-7B Llama-2-7B-Chat GPT-3.5-Turbo
 - name: AutoDAN (2023) – Interpretable Grad
-  leaf: overt-carriers.direct-override.dan-composites
+  leaf: overt-carriers.direct-override-patterns.dan-style-composites
   paper_url: https://arxiv.org/abs/2310.15140
   repo_url: https://github.com/rotaryhammer/code-autodan
   venue: COLM 2024
@@ -643,7 +643,7 @@ attacks:
   - 2023-05-15) GPT-4 (Azure API
   - 2023-07-01-preview)
 - name: 'AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs'
-  leaf: overt-carriers.direct-override.dan-composites
+  leaf: overt-carriers.direct-override-patterns.dan-style-composites
   paper_url: https://arxiv.org/abs/2410.05295
   repo_url: https://github.com/SaFoLab-WISC/AutoDAN-Turbo
   venue: ICLR 2025
@@ -665,14 +665,14 @@ attacks:
   - Qwen-14B-chat
   - Qwen-72B-chat
 - name: 'AutoJailbreak: Exploring Jailbreak Prompts for Large Language Models'
-  leaf: overt-carriers.direct-override.dan-composites
+  leaf: overt-carriers.direct-override-patterns.dan-style-composites
   paper_url: https://arxiv.org/abs/2406.03805
   venue: Arxiv
   year: 2024
   models:
   - GPT-3.5-turbo GPT-4 LLaMA-2 LLaMA-3 Mistral Qwen Vicuna Claude
 - name: 'Do Anything Now: Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models (DAN)'
-  leaf: overt-carriers.direct-override.dan-composites
+  leaf: overt-carriers.direct-override-patterns.dan-style-composites
   paper_url: https://arxiv.org/abs/2308.03825
   repo_url: https://github.com/verazuo/jailbreak_llms
   venue: ACM SIGSAC Conference on Computer and Communications Security (CCS ’24)
@@ -685,7 +685,7 @@ attacks:
   - Dolly
   - Vicuna
 - name: 'Don’t Listen To Me: Understanding &amp; Exploring Jailbreak Prompts'
-  leaf: overt-carriers.direct-override.dan-composites
+  leaf: overt-carriers.direct-override-patterns.dan-style-composites
   paper_url: https://arxiv.org/abs/2403.17336
   repo_url: https://github.com/WUSTL-CSPL/LLMJailbreak
   venue: USENIX Security 2024
@@ -693,14 +693,14 @@ attacks:
   models:
   - GPT-3.5 GPT-4 Claude 2 Claude Instant PaLM 2 Vicuna-13B
 - name: 'BadLlama 3: How We Used Representation Editing to Jailbreak Llama 3 in 8 Days'
-  leaf: overt-carriers.direct-override.simple-overrides
+  leaf: overt-carriers.direct-override-patterns.simple-overrides
   paper_url: https://arxiv.org/html/2407.01376v1
   venue: Arxiv
   year: 2024
   models:
   - Llama 3 8B Llama 3 70B
 - name: 'Don’t Say No: Jailbreaking Large Language Models by OWL Constraints Analysis'
-  leaf: overt-carriers.direct-override.simple-overrides
+  leaf: overt-carriers.direct-override-patterns.simple-overrides
   paper_url: https://arxiv.org/abs/2404.16369
   repo_url: https://github.com/DSN-2024/DSN
   venue: ACL 2025
@@ -710,7 +710,7 @@ attacks:
     Vicuna-7b-v1.3 Vicuna-13B-v1.5 (via JailbreakBench’s default targets) Black-box / transfer &amp; evaluator LLMs GPT-3.5-turbo
     (transferability experiments) GPT-4 (used as an external evaluator in the Ensemble Evaluation) Llama-3-Instruct-70B
 - name: 'Ignore Previous Prompt: Attack Techniques for Language Models'
-  leaf: overt-carriers.direct-override.simple-overrides
+  leaf: overt-carriers.direct-override-patterns.simple-overrides
   paper_url: https://arxiv.org/abs/2211.09527
   repo_url: https://github.com/agencyenterprise/PromptInject
   venue: NeurIPS 2022
@@ -718,14 +718,14 @@ attacks:
   models:
   - text-davinci-002 text-curie-001 text-babbage-001 text-ada-001
 - name: Jailbreak Instruction-Tuned LLMs via end-of-sentence MLP Re-weighting
-  leaf: overt-carriers.direct-override.simple-overrides
+  leaf: overt-carriers.direct-override-patterns.simple-overrides
   paper_url: https://arxiv.org/abs/2410.10150
   venue: Arxiv
   year: 2024
   models:
   - Llama-3-8B-Instruct Llama-3-70B-Instruct Qwen-2-7B-Instruct Qwen-2-72B-Instruct Gemma-2-2B Gemma-2-27B Yi-1.5-6B
 - name: 'Jailbreaking as a Reward Misspecification Problem: Explaining and Preventing Scaleable Attacks on Aligned LLMs'
-  leaf: overt-carriers.direct-override.simple-overrides
+  leaf: overt-carriers.direct-override-patterns.simple-overrides
   paper_url: https://arxiv.org/abs/2406.14393
   repo_url: https://github.com/zhxieml/remiss-jailbreak
   venue: Arxiv
@@ -734,7 +734,7 @@ attacks:
   - Llama-2-7B-Chat Vicuna-7B (vicuna_chat) LlamaGuard (Meta Llama Guard safety model
   - used as an evaluator/defense) GPT-3.5-Turbo-0301 (transfer evaluation) GPT-4o
 - name: 'Jinx: Unlimited LLMs for Probing Alignment Failures'
-  leaf: overt-carriers.direct-override.simple-overrides
+  leaf: overt-carriers.direct-override-patterns.simple-overrides
   paper_url: https://arxiv.org/abs/2508.08243
   repo_url: https://github.com/Opdoop
   venue: Arxiv
@@ -756,7 +756,7 @@ attacks:
   - Jinx-Qwen3-1.7B
   - Jinx-Qwen3-0.6B
 - name: 'LLM STINGER: Jailbreaking LLMs using RL Fine-tuned LLMs'
-  leaf: overt-carriers.direct-override.simple-overrides
+  leaf: overt-carriers.direct-override-patterns.simple-overrides
   paper_url: https://arxiv.org/abs/2411.08862
   venue: AAAI 2025
   year: 2025
@@ -770,7 +770,7 @@ attacks:
   - GPT-4-Turbo-1106
   - Gemma-2B-it (also evaluated as a HarmBench judgment LLM (used to decide whether an attack succeeded)
 - name: 'CodeAttack: Revealing the Vulnerabilities of Code Understanding in Large Language Models via Jailbreak Attacks'
-  leaf: overt-carriers.roleplay-template.benign-pretext
+  leaf: overt-carriers.roleplay-and-template-jailbreaks.benign-pretext-safety-reframing
   paper_url: https://arxiv.org/abs/2403.07865
   repo_url: https://github.com/renqibing/CodeAttack
   venue: ACL 2024
@@ -779,7 +779,7 @@ attacks:
   - GPT-4 GPT-3.5 Claude-2 Claude Instant Llama-2-7B-Chat Llama-2-13B-Chat Llama-2-70B-Chat Llama-2-7B (base) Llama-2-13B
     (base) Llama-2-70B (base)
 - name: Coercive Knowledge Extraction via Jailbreaking Large Language Models
-  leaf: overt-carriers.roleplay-template.benign-pretext
+  leaf: overt-carriers.roleplay-and-template-jailbreaks.benign-pretext-safety-reframing
   paper_url: https://arxiv.org/abs/2312.04782
   venue: Arxiv
   year: 2023
@@ -787,7 +787,7 @@ attacks:
   - Yi-34B Vicuna-13B Llama2-7B Llama2-13B Llama2-70B CodeLlama-13B-Instruct CodeLlama-13B-Python gpt-3.5-turbo-instruct gpt-3.5-turbo-instruct-0914
     text-davinci-003
 - name: 'Knowledge-to-Jailbreak: Jailbreaking LLMs with Model Knowledge'
-  leaf: overt-carriers.roleplay-template.benign-pretext
+  leaf: overt-carriers.roleplay-and-template-jailbreaks.benign-pretext-safety-reframing
   paper_url: https://arxiv.org/abs/2406.11682
   repo_url: https://github.com/THU-KEG/Knowledge-to-Jailbreak
   venue: KDD 2025
@@ -795,14 +795,14 @@ attacks:
   models:
   - GPT-4 GPT-3.5-Turbo Llama-2-7B-Chat Llama-2-13B-Chat Llama-2-70B-Chat Qwen-7B-Chat Baichuan-13B-Chat ChatGLM-6B
 - name: 'GUARD: Role-Playing-Based Prompt Attack for Jailbreaking Large Language Models'
-  leaf: overt-carriers.roleplay-template.persona-roleplay
+  leaf: overt-carriers.roleplay-and-template-jailbreaks.persona-role-play
   paper_url: https://arxiv.org/html/2402.03299v6
   venue: ICLR 2024
   year: 2024
   models:
   - Vicuna-13B LongChat-7B Llama2-7B ChatGPT (gpt-3.5-turbo-0603) MiniGPT-v2 (VLM) Gemini Vision Pro (VLM)
 - name: 'Persona: Teleological Personalization of Conversational Responses'
-  leaf: overt-carriers.roleplay-template.persona-roleplay
+  leaf: overt-carriers.roleplay-and-template-jailbreaks.persona-role-play
   paper_url: https://arxiv.org/html/2412.13103v1
   repo_url: https://github.com/tml1026/Lifelong-Personalized-Agent
   venue: Arxiv
@@ -814,7 +814,7 @@ attacks:
   - Gemini-1.5-Flash-Latest
   - Claude-3.5-Sonnet
 - name: Pretending (Learn Prompting)
-  leaf: overt-carriers.roleplay-template.persona-roleplay
+  leaf: overt-carriers.roleplay-and-template-jailbreaks.persona-role-play
   paper_url: https://arxiv.org/abs/2507.22171
   repo_url: https://github.com/CjangCjengh/Generic_Persona
   venue: ACL
@@ -822,7 +822,7 @@ attacks:
   models:
   - ChatGPT (OpenAI)
 - name: r/LocalLLaMA (persona / role-play jailbreak prompts in the community)
-  leaf: overt-carriers.roleplay-template.persona-roleplay
+  leaf: overt-carriers.roleplay-and-template-jailbreaks.persona-role-play
   paper_url: https://www.reddit.com/r/LocalLLaMA/
   venue: Reddit community
   year: 2023
@@ -839,7 +839,7 @@ attacks:
   - 4 previews)
   - GLM-4 / GLM-4.6-GGUF
 - name: 'AdvPrompter: Sparse and Imperceptible Adversarial Prompts'
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/2404.16873
   repo_url: https://github.com/facebookresearch/advprompter
   venue: ICML 2025
@@ -848,7 +848,7 @@ attacks:
   - 'AdvPrompter model: non-chat Llama2-7B (as the attack generator). Vicuna-7B v1.5 Vicuna-13B v1.5 Llama2-7B-chat Falcon-7B-instruct
     Mistral-7B-instruct Pythia-12B-chat GPT-3.5 GPT-4'
 - name: Attacking Large Language Models with Projected Gradient Descent
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/2402.09154
   repo_url: https://github.com/sigeisler/reinforce-attacks-llms
   venue: ICML 2024 – poster
@@ -861,7 +861,7 @@ attacks:
   - Gemma 2B
   - Gemma 7B
 - name: DeepWordBug (2018)
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/1801.04354
   repo_url: https://github.com/QData/deepWordBug
   venue: 2018 IEEE Security and Privacy Workshops (SPW 2018)
@@ -870,7 +870,7 @@ attacks:
   - Word-LSTM (bi-directional LSTM text classifier)
   - Char-CNN (character-level convolutional CNN)
 - name: FlipAttack
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/2410.02832
   repo_url: https://github.com/yueliu1999/FlipAttack
   venue: arxiv
@@ -878,7 +878,7 @@ attacks:
   models:
   - GPT-3.5 Turbo GPT-4 Turbo GPT-4 GPT-4o GPT-4o mini Claude 3.5 Sonnet LLaMA 3.1 405B Mixtral 8x22B
 - name: HotFlip
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/1712.06751
   repo_url: https://github.com/anyirao/WordAdver
   venue: ACL 2018
@@ -887,14 +887,14 @@ attacks:
   - CharCNN-LSTM classifier on AG’s News
   - Kim CNN sentence classifier on SST (Stanford Sentiment Treebank)
 - name: 'PAP: How Johnny Can Persuade LLMs via Character-Level Paraphrasing'
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/2401.06373
   venue: ACL 2024
   year: 2024
   models:
   - Llama-2-7B-Chat GPT-3.5 GPT-4
 - name: Revisiting Character-level Adversarial Attacks for Language Models
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/2405.04346
   repo_url: https://github.com/LIONS-EPFL/Charmer
   venue: ICML 2024
@@ -903,7 +903,7 @@ attacks:
   - BERT (TextAttack BERT classifiers) RoBERTa (TextAttack RoBERTa classifiers) ALBERT (TextAttack ALBERT classifiers; reported
     in Appendix B) Llama 2-Chat 7B Vicuna 7B
 - name: Single Character Perturbations Break LLM Alignment
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/2407.03232
   venue: AAAI-25
   year: 2025
@@ -912,7 +912,7 @@ attacks:
     Vicuna v1.5 lmsys/vicuna-7b-v1.5 lmsys/vicuna-13b-v1.5 Guanaco TheBloke/guanaco-7b-HF TheBloke/guanaco-13b-HF Falcon tiiuae/falcon-7b-instruct
     MPT mosaicml/mpt-7b-chat ChatGLM THUDM/chatglm-6b Mistral mistralai/Mistral-7B-Instruct-v0.2
 - name: TextBugger (2019)
-  leaf: perturbation.plain.character-micro-edits
+  leaf: perturbation.plain-perturbations.character-level-micro-edits
   paper_url: https://arxiv.org/abs/1812.05271
   repo_url: https://github.com/QData/TextAttack
   venue: NDSS 2019
@@ -931,7 +931,7 @@ attacks:
   - TextProcessing
   - Mashape Sentiment
 - name: Adversarial Examples for Evaluating Reading Comprehension Systems
-  leaf: perturbation.plain.local-paraphrase
+  leaf: perturbation.plain-perturbations.local-paraphrase-and-rewording
   paper_url: https://arxiv.org/abs/1707.07328
   repo_url: https://github.com/robinjia/adversarial-squad
   venue: EMNLP 2017
@@ -954,7 +954,7 @@ attacks:
   - Dynamic Chunk Reader (DCR)
   - Logistic Regression baseline
 - name: Generating Natural Language Adversarial Examples
-  leaf: perturbation.plain.local-paraphrase
+  leaf: perturbation.plain-perturbations.local-paraphrase-and-rewording
   paper_url: https://arxiv.org/abs/1804.07998
   repo_url: https://github.com/nesl/nlp_adversarial_examples
   venue: EMNLP 2018
@@ -963,7 +963,7 @@ attacks:
   - IMDB LSTM sentiment classifier (Keras imdb_lstm)
   - SNLI textual entailment classifier (bag-of-embeddings + 3-layer ReLU MLP
 - name: Advancing Adversarial Suffix Transfer Learning for Jailbreaking Large Language Models (DeGCG)
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2408.14866
   repo_url: https://github.com/Waffle-Liu/DeGCG
   venue: EMNLP 2024
@@ -971,7 +971,7 @@ attacks:
   models:
   - Llama2-chat-7B Mistral-Instruct-7B OpenChat-3.5-7B Starling-LM-alpha-7B Llama2-13B
 - name: AmpleGCG (2024)
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://openreview.net/pdf?id=UfqzXg95I5
   repo_url: https://github.com/OSU-NLP-Group/AmpleGCG
   venue: COLM 2024
@@ -979,7 +979,7 @@ attacks:
   models:
   - Vicuna-7B Llama-2-7B-Chat Mistral-7B-Instruct GPT-3.5-0613 GPT-3.5-0125 GPT-4-0613
 - name: 'AmpleGCG-Plus: Faster and Stronger Adversarial Attacks Against Large Language Models'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2410.22143
   repo_url: https://huggingface.co/osunlp/AmpleGCG-plus-llama2-sourced-llama2-7b-chat
   venue: arXiv
@@ -989,7 +989,7 @@ attacks:
   - Llama-2-7B-chat
   - GPT-4 and the GPT-4o series
 - name: AttnGCG
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2410.09040
   repo_url: https://github.com/UCSC-VLAA/AttnGCG-attack
   venue: Transactions on Machine Learning Research
@@ -997,7 +997,7 @@ attacks:
   models:
   - Llama-2-7B-Chat Llama-2-13B-Chat Llama-2-70B-Chat Gemma-7B-Instruct Gemma-2-9B-It GPT-3.5-Turbo GPT-4
 - name: Boosting Jailbreak Transferability for LLMs (SI-GCG / I-GCG family)
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2410.15645
   repo_url: https://github.com/HqingLiu/SI-GCG
   venue: Arxiv
@@ -1006,7 +1006,7 @@ attacks:
   - Llama2-7B-Chat
   - Vicuna-7B-1.5 RoBERTa
 - name: Broken Hill — Productionized GCG Runner
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/pdf/2307.15043
   repo_url: https://github.com/llm-attacks/llm-attacks
   venue: ICLR 2024
@@ -1014,7 +1014,7 @@ attacks:
   models:
   - LLaMA-2-7B-Chat LLaMA-2-13B-Chat LLaMA-2-70B-Chat Vicuna-7B Vicuna-13B Alpaca-7B GPT-3.5-turbo GPT-4
 - name: 'COLD-Attack: Jailbreaking Large Language Models via Conditioned Latent Direction'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/html/2402.08679v2
   repo_url: https://github.com/Yu-Fangxu/COLD-Attack
   venue: ICML 2024
@@ -1023,7 +1023,7 @@ attacks:
   - Vicuna-7B-v1.5 Llama-2-7B-Chat-hf Guanaco-7B-HF Mistral-7B-Instruct-v0.2 Vicuna-13B-v1.5 Guanaco-13B-HF Llama-2-13B-Chat-hf
     GPT-3.5-turbo GPT-4
 - name: Efficient LLM jailbreak via adaptive dense-to-sparse constrained optimization
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://dl.acm.org/doi/10.5555/3737916.3738647
   repo_url: https://github.com/hukkai/adc_llm_attack
   venue: NeurIPS 2024
@@ -1039,7 +1039,7 @@ attacks:
   - Qwen-14B-chat Black-box transfer GPT-3.5-turbo-0125
   - GPT-4-0314
 - name: 'From Noise to Clarity: Jailbreaking LLMs via Adversarial Self-Template Contrastive Editing (ASTEF)'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2503.00038
   venue: ACL 2025
   year: 2025
@@ -1047,7 +1047,7 @@ attacks:
   - Qwen2.5-7B-Instruct Llama3-8B-Instruct GPT-4o-mini GPT-4o Gemma2-9B GLM3-6B Mistral-7B Qwen2.5-32B Qwen2-72B Llama3.1-8B
     ChatGPT-o1 Claude-3.5 BGE-M3
 - name: 'Functional Homotopy Attack: A Unified Approach to Jailbreaking White-box LLMs'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2410.04234
   venue: arXiv
   year: 2024
@@ -1056,7 +1056,7 @@ attacks:
   - aligned variant) Llama-3 (safe
   - aligned variant)
 - name: 'GASP: Efficient Black-Box Generation of Adversarial Suffixes for Jailbreaking LLMs'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2411.14133
   venue: NeurIPS 2025
   year: 2025
@@ -1069,7 +1069,7 @@ attacks:
   - GPT-4o-mini
   - GPT-3.5-turbo-0125 Wizard-Vicuna-7B-Uncensored
 - name: GCG
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2307.15043
   repo_url: https://github.com/llm-attacks/llm-attacks
   venue: ICLR 2024
@@ -1077,7 +1077,7 @@ attacks:
   models:
   - LLaMA-2-7B-Chat LLaMA-2-13B-Chat LLaMA-2-70B-Chat Vicuna-7B Vicuna-13B Alpaca-7B GPT-3.5-turbo GPT-4
 - name: I-GCG
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2410.15645
   repo_url: https://github.com/HqingLiu/SI-GCG
   venue: Arxiv
@@ -1086,14 +1086,14 @@ attacks:
   - Llama2-7B-Chat
   - Vicuna-7B-1.5 RoBERTa
 - name: JAILMINE
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2405.13068
   venue: Arxiv
   year: 2024
   models:
   - LLaMA-2-7B-Chat LLaMA-2-13B-Chat Mistral-7B-Instruct LLaMA-3-8B-Instruct Gemma-7B-It
 - name: 'Open Sesame: Universal Black Box Jailbreaking of Large Language Models'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2309.01446
   venue: Applied Sciences (MDPI)
   year: 2024
@@ -1101,7 +1101,7 @@ attacks:
   - LLaMA2-7B-Chat
   - Vicuna-7B
 - name: 'PAL: Proxy-Guided Black-Box Attack on Large Language Models'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2402.09674
   repo_url: https://github.com/chawins/pal
   venue: arXiv
@@ -1109,7 +1109,7 @@ attacks:
   models:
   - Vicuna-7B v1.5 Llama-2-7B GPT-3.5-Turbo
 - name: 'QROA: Query-Response Optimization Attack Against Large Language Models'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/html/2406.02044v2
   repo_url: https://github.com/qroa/qroa
   venue: CoRR
@@ -1121,7 +1121,7 @@ attacks:
   - openai-0613
   - specifically GPT-3.5-Turbo-0613) Mistral Next
 - name: Query-Based Adversarial Prompt Generation (QAPG)
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2402.12329
   venue: Neurips 2024
   year: 2024
@@ -1131,7 +1131,7 @@ attacks:
     (target model in transfer comparisons) gpt-3.5-turbo-instruct-0914 (OpenAI GPT-3.5 Turbo Instruct; main closed-source
     target) OpenAI content-moderation model text-moderation-007 Llama Guard 7B
 - name: 'SM-GCG: Spatial Momentum Greedy Coordinate Gradient for Robust Jailbreak Attacks on Large Language Models'
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://www.mdpi.com/2079-9292/14/19/3967
   venue: Electronics (MDPI), Volume 14, Issue 19, Article 3967
   year: 2025
@@ -1140,7 +1140,7 @@ attacks:
   - Guanaco-7B
   - Llama2-7B-Chat
 - name: Stealthy Jailbreaks via Benign Data
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2410.21083
   venue: NAACL-HLT 2025
   year: 2025
@@ -1149,7 +1149,7 @@ attacks:
   - GPT-4o mini
   - GPT2-XL Llama 2 7B Chat Vicuna 7B v1.5 Llama 3 8B (base) Llama 3 8B Instruct
 - name: Stronger Universal &amp; Transferable Attacks (NAACL 2025)
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://aclanthology.org/2025.naacl-long.302.pdf
   repo_url: https://github.com/SproutNan/AI-Safety_SCAV
   venue: NAACL 2025
@@ -1160,7 +1160,7 @@ attacks:
     Breaker” Llama-3 model) Mistral-RR (robust “Circuit Breaker” Mistral model) Judge / auxiliary model Meta Llama Guard 2
     8B
 - name: The Resurgence of GCG Adversarial Attacks on Large Language Models
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/html/2509.00391v1
   venue: arXiv
   year: 2025
@@ -1168,7 +1168,7 @@ attacks:
   - Qwen2.5-0.5B-Instruct (target LLM) LLaMA-3.2-1B-Instruct (target LLM) GPT-OSS-20B (20B-parameter open-source target LLM)
     GPT-4o (used as an external semantic judge and to generate coding prompts)
 - name: Transferable Ensemble Black-box Jailbreak Attacks on LLMs
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2410.23558
   repo_url: https://github.com/YQYANG2233/Large-Language-Model-Break-AI
   venue: Arxiv
@@ -1182,7 +1182,7 @@ attacks:
   - DeepSeek-V2.5 GPT-4
   - Qwen-Max-Latest
 - name: Understanding and Enhancing the Transferability of Jailbreaking Attacks
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2502.03052
   repo_url: https://github.com/tmllab/2025_ICLR_PiF
   venue: ICLR 2025
@@ -1201,7 +1201,7 @@ attacks:
   - Llama-Guard-3-8B (instruction filter)
   - SmoothLLM (defence baseline)
 - name: Universal Adversarial Triggers for Attacking and Analyzing NLP
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/1908.07125
   repo_url: https://github.com/Eric-Wallace/universal-triggers
   venue: EMNLP-IJCNLP 2019
@@ -1219,7 +1219,7 @@ attacks:
   - 'Char-BiDAF Language modeling: GPT-2 117M'
   - GPT-2 345M
 - name: Weak-to-Strong Jailbreaking on Large Language Models
-  leaf: perturbation.transfer.adversarial-triggers
+  leaf: perturbation.transfer-text-perturbations.adversarial-triggers
   paper_url: https://arxiv.org/abs/2401.17256
   repo_url: https://github.com/XuandongZhao/weak-to-strong
   venue: ICML 2025
@@ -1235,7 +1235,7 @@ attacks:
   - 7B→20B
   - and 7B→70B weak-to-strong attacks.
 - name: Prompt sampling attack (Best-of-N Jailbreaking)
-  leaf: perturbation.transfer.paraphrase-transfer
+  leaf: perturbation.transfer-text-perturbations.paraphrase-based-transfer
   paper_url: https://arxiv.org/pdf/2412.03556
   repo_url: https://github.com/jplhughes/bon-jailbreaking
   venue: arXiv
@@ -1244,7 +1244,7 @@ attacks:
   - Claude 3.5 Sonnet Claude 3 Opus GPT-4o GPT-4o-mini Gemini-1.5-Flash-001 (“Gemini Flash”) Gemini-1.5-Pro-001 (“Gemini Pro”)
     Llama 3 8B Llama-3-8B-Instruct-RR (“Circuit Breaking” model) GraySwan Cygnet API
 - name: Semantic Mirror Jailbreak (SMJ)
-  leaf: perturbation.transfer.paraphrase-transfer
+  leaf: perturbation.transfer-text-perturbations.paraphrase-based-transfer
   paper_url: https://arxiv.org/abs/2402.14872
   venue: arxiv
   year: 2024
@@ -1253,7 +1253,7 @@ attacks:
   - Vicuna-7b-v1.5
   - Guanaco-7b
 - name: TextFooler (2019)
-  leaf: perturbation.transfer.paraphrase-transfer
+  leaf: perturbation.transfer-text-perturbations.paraphrase-based-transfer
   paper_url: https://arxiv.org/abs/1907.11932
   repo_url: https://github.com/jind11/TextFooler
   venue: AAAI-20

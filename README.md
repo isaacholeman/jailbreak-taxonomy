@@ -43,14 +43,14 @@ jailbreak-taxonomy/
 │       ├── encoding-abuse/
 │       │   ├── README.md
 │       │   ├── encoding-unicode-tricks.md
-│       │   └── wrappers-schemas.md
+│       │   └── wrappers-and-schemas.md
 │       ├── overt-carriers/
 │       │   ├── README.md
 │       │   ├── direct-override-patterns.md
-│       │   └── roleplay-template-jailbreaks.md
+│       │   └── roleplay-and-template-jailbreaks.md
 │       └── composition-ordering/
 │           ├── README.md
-│           ├── context-framing-deception.md
+│           ├── context-framing-and-deception.md
 │           └── fragment-assembly.md
 ├── .github/
 │   ├── ISSUE_TEMPLATE/          # GitHub issue templates (attack submission, taxonomy contribution, bug report)

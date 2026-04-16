@@ -4,6 +4,16 @@ All notable changes to the MLCommons Jailbreak Attack Taxonomy are documented in
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+- `scripts/generate_tables.py` generates Attack Catalog tables in family READMEs and category documents from `taxonomy/attacks.yaml`
+- Combined attack catalog at the family level, grouped by category with per-attack leaf labels
+- `.github/workflows/check-tables.yml` enforces drift-free tables on every pull request
+
+### Changed
+- `taxonomy/attacks.yaml` is now the single source of truth for attack catalog tables; per-leaf and per-family tables are regenerated from it
+
 ## [0.7.0] - 2026-02-16
 
 ### Added
