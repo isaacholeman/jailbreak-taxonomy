@@ -10,7 +10,9 @@ repository-code: https://github.com/mlcommons/jailbreak-taxonomy
 keywords:
   - jailbreak
   - large language models
+  - AI security
   - AI safety
+  - AI risk and reliability
   - adversarial attacks
   - taxonomy
   - benchmark
