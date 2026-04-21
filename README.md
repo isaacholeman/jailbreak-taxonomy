@@ -181,7 +181,16 @@ If you use or reference this taxonomy, please cite the relevant papers:
 
 ## Contributors
 
+<a href="https://github.com/agruen"><img src="https://github.com/agruen.png" width="70px" alt="agruen" /></a>
+<a href="https://github.com/ChristopherKnotz"><img src="https://github.com/ChristopherKnotz.png" width="70px" alt="ChristopherKnotz" /></a>
+<a href="https://github.com/faizaai"><img src="https://github.com/faizaai.png" width="70px" alt="faizaai" /></a>
+<a href="https://github.com/foundjem"><img src="https://github.com/foundjem.png" width="70px" alt="foundjem" /></a>
+<a href="https://github.com/hillenbrandb"><img src="https://github.com/hillenbrandb.png" width="70px" alt="hillenbrandb" /></a>
 <a href="https://github.com/isaacholeman"><img src="https://github.com/isaacholeman.png" width="70px" alt="isaacholeman" /></a>
+<a href="https://github.com/jacqueline-mlc"><img src="https://github.com/jacqueline-mlc.png" width="70px" alt="jacqueline-mlc" /></a>
+<a href="https://github.com/mserrhini"><img src="https://github.com/mserrhini.png" width="70px" alt="mserrhini" /></a>
+<a href="https://github.com/petit-security"><img src="https://github.com/petit-security.png" width="70px" alt="petit-security" /></a>
+<a href="https://github.com/saifulislamPhD"><img src="https://github.com/saifulislamPhD.png" width="70px" alt="saifulislamPhD" /></a>
 
 Contributions welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 
